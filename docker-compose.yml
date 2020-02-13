@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  test:
+    build:
+      context: .
+      target: dev
+    command: go test
+    volumes:
+      - .:/go/src/github.com/dafiti-group/aws-s3-sync-api
